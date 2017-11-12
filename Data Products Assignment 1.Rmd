@@ -1,0 +1,20 @@
+---
+title: "Data Products Assignment 1"
+author: "Wilson"
+date: "November 12, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(leaflet)
+```
+
+## 12th November 2017
+
+```{r drawMap, echo=FALSE}
+m<-leaflet() %>% addTiles() %>%
+  setView(lng = 101.6067100, lat = 3.1072600, zoom = 14)
+m
+```
+
